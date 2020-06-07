@@ -4,10 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var pigpio_1 = __importDefault(require("pigpio"));
+var Gpio = pigpio_1.default.Gpio;
 // The number of microseconds it takes sound to travel 1cm at 20 degrees celcius
 var MICROSECDONDS_PER_CM = 1e6 / 34321;
-var trigger = new pigpio_1.default(23, { mode: pigpio_1.default.OUTPUT });
-var echo = new pigpio_1.default(24, { mode: pigpio_1.default.INPUT, alert: true });
+var trigger = new Gpio(14, { mode: Gpio.OUTPUT });
+var echo = new Gpio(15, { mode: Gpio.INPUT, alert: true });
 trigger.digitalWrite(0); // Make sure trigger is low
 var watchHCSR04 = function () {
     var startTick;
