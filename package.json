@@ -1,0 +1,22 @@
+{
+  "name": "radar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-kline/radar.git"
+  },
+  "author": "Paul Kline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-kline/radar/issues"
+  },
+  "homepage": "https://github.com/paul-kline/radar#readme",
+  "dependencies": {
+    "pigpio": "^3.2.3"
+  }
+}
